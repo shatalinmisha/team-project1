@@ -1,0 +1,153 @@
+.section-reviews {
+  padding-top: 40px;
+  padding-bottom: 34px;
+  @include tab {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desk {
+    padding-top: 62px;
+    padding-bottom: 66px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__article {
+  margin-bottom: 42px;
+  @include tab {
+    margin-bottom: 47px;
+  }
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__picture {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 29px;
+  @include tab {
+    margin-bottom: 19px;
+  }
+  @include desk {
+    margin-bottom: 15px;
+  }
+}
+
+.slider__background {
+  position: relative;
+  width: 280px;
+  height: 308px;
+  margin: auto;
+  padding: 43px 50px 26px;
+  text-align: center;
+  background: #fafafa;
+
+  @include tab {
+    padding: 47px 60px 34px;
+    width: 620px;
+    height: 164px;
+  }
+
+  @include desk {
+    padding: 47px 65px 39px 65px;
+    width: 926px;
+    height: 138px;
+  }
+}
+.slider__background::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  top: 28px;
+  left: 61px;
+  background: url(../images/icon-quotes.svg);
+  @include tab {
+    top: 30px;
+    left: 40px;
+  }
+
+  @include desk {
+    top: 32px;
+    left: 50px;
+  }
+}
+.slider__background::after {
+  content: '. . .';
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: -40px;
+  left: 0;
+  font-size: 32px;
+  text-align: center;
+  color: $accentColor;
+  @include tab {
+    bottom: -34px;
+  }
+}
+
+.slider__text {
+  position: relative;
+  font-size: 12px;
+  line-height: 2.55;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-align: center;
+  background: repeating-linear-gradient(to top, $borderColorGradient 0 1px, transparent 1px 31px);
+
+  @include tab {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 2.16;
+  }
+  @include desk {
+    padding-right: 35px;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.slider__title {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 52px;
+  font-size: 14px;
+  line-height: 1.86;
+  @include tab {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  @include desk {
+    font-size: 20px;
+    margin-top: 34px;
+  }
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $accentColor;
+  background: url(../images/icon-house.svg);
+  border-radius: 0;
+  transition: background-color $timingFunction;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 0;
+  margin-right: 18px;
+}

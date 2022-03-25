@@ -1,0 +1,343 @@
+.hero {
+  background-color: $palePink;
+  padding-top: 6px;
+  z-index: 1;
+}
+
+.hero__container {
+  position: relative;
+  min-height: 502px;
+
+  @include tab {
+    min-height: 399px;
+  }
+
+  @include desk {
+    min-height: 665px;
+  }
+}
+
+.hero__title {
+  width: 218px;
+  margin-bottom: 20px;
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $whiteColorText;
+  @include tab {
+    width: 162px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.13;
+
+  }
+
+  @include desk {
+    width: 277px;
+    margin-bottom: 25px;
+    font-size: 38px;
+    line-height: 1.15;
+  }
+}
+
+.title__wrap {
+  color: $accentColor;
+  font-size: 47px;
+  @include tab {
+    font-size: 34px;
+    line-height: 0.7;
+
+  }
+  @include desk {
+    font-size: 60px;
+  }
+}
+
+.hero__list-btn {
+  display: flex;
+
+  @include tab {
+    margin-bottom: 20px;
+  }
+
+  @include desk {
+    margin-bottom: 56px;
+  }
+}
+
+.hero__item-btn {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @include desk {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.hero__btn {
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: $whiteColorText;
+  color: $accentColor;
+  border-radius: 20px;
+  min-height: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition-property: background-color, font-size, line-height;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  &:hover,
+  &:focus {
+    font-size: 10px;
+    line-height: 1.2;
+    background-color: #ecebeb;
+  }
+
+  @include tab {
+    padding-left: 14px;
+    padding-right: 14px;
+    &:hover,
+    &:focus {
+      font-size: 12px;
+      line-height: 1.1;
+    }
+  }
+
+  @include desk {
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+    padding-left: 21px;
+    padding-right: 21px;
+    &:hover,
+    &:focus {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+  }
+}
+
+.hero__btn--active {
+  background-color: $accentColor;
+  color: $whiteColorText;
+  &:hover,
+  &:focus {
+    background-color: #C7133E;
+  }
+}
+
+.ice-circle {
+  background: $brightPink;
+  position: absolute;
+  border-radius: 50%;
+  top: 46%;
+  right: 26%;
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0px 1px 0px 149px $brightPink;
+  -moz-box-shadow: 0px 1px 0px 149px $brightPink;
+  box-shadow: 0px 1px 0px 149px $brightPink;
+  z-index: 1;
+  @include tab {
+    top: 41%;
+    right: 36%;
+    -webkit-box-shadow: 0px 1px 0px 136px $brightPink;
+    z-index: 1;
+  }
+  @include desk {
+    top: 44%;
+    right: 40%;
+    -webkit-box-shadow: 0px 1px 0px 245px $brightPink;
+  }
+}
+
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  z-index: 2;
+  @include tab {
+    width: 143px;
+    right: 33%;
+    z-index: 1;
+  }
+  @include desk {
+    width: 236px;
+    right: 35%;
+  }
+}
+
+.hero__left-wrap {
+  position: relative;
+  z-index: 3;
+}
+
+.eco-milk {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  left: -40px;
+
+  @include tab {
+    left: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.eco-milk__img {
+  @include desk {
+    margin-right: 30px;
+  }
+}
+
+.eco-milk__desc {
+  position: relative;
+  z-index: 1;
+}
+
+.eco-milk__text {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $whiteColorText;
+
+  @include tab {
+    margin-bottom: 7px;
+  }
+  @include desk {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+}
+
+.arrow-right__btn {
+  display: flex;
+  align-items: center;
+  background-color: $whiteColorText;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  transition-property: background-color, transform, fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+    background-color: $accentColor;
+
+    & .eco-milk__icon {
+      fill: $whiteColorText;
+    }
+  }
+  @include desk {
+    width: 26px;
+    height: 26px;
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    transition: transform 250ms $timingFunction;
+    }
+  }
+}
+
+.eco-milk__icon {
+  fill: $accentColor;
+}
+
+.hero__right-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  z-index: 1;
+  @include desk {
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__number-conteiner {
+  @include tab {
+    margin-bottom: 72px;
+  }
+  @include desk  {
+    margin-bottom: 109px;
+  }
+}
+
+.hero__right-number {
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accentColor;
+  @include desk {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.hero__right-text {
+  font-family: DM Sans;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: $whiteColorText;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.hero__right-desc {
+  position: relative;
+  @include tab {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -5px;
+      top: -3px;
+      z-index: -1;
+      display: block;
+      background-color: $whiteColorText;
+      border-radius: 50%;
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  @include desk {
+       &::after {
+      right: -15px;
+      top: -5px;
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

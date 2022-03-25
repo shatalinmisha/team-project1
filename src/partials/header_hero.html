@@ -1,0 +1,117 @@
+<section class="hero">
+  <div class="container hero__container">
+    <h2 class="visually-hidden">Hero Ice Cream</h2>
+    <header class="page-header">
+      <a href="./index.html" class="logo"
+        ><svg width="199px" height="50px">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link nav__link--active">Home</a>
+          </li>
+          <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">How it’s made?</a></li>
+          <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="modal__open-btn">
+
+
+        <svg width="22px" height="14px">
+          <use href="./images/icons.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      <button type="button" class="page-header__btn" data-modal-open>
+        Buy now<svg width="10px" height="10px" class="corner-svg">
+          <use href="./images/icons.svg#icon-corner"></use>
+        </svg>
+      </button>
+    </header>
+    <div class="ice-circle"></div>
+
+    <div class="hero__left-wrap">
+      <h1 class="hero__title">ice cream made with <span class="title__wrap">passion</span></h1>
+      <ul class="hero__list-btn">
+        <li class="hero__item-btn">
+          <a href="#products" class="hero__btn hero__btn--active">Products</a>
+        </li>
+        <li class="hero__item-btn">
+          <a href="#about" class="hero__btn">How it’s made?</a>
+        </li>
+      </ul>
+
+      <div class="eco-milk">
+        <picture class="eco-milk__img">
+          <source
+            srcset="./images/desktop/hero-2-1200.png 1x, ./images/desktop/hero-2-1200@2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./images/tablet/hero-2-768.png 1x, ./images/tablet/hero-2-768@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <img src="./images/tablet/hero-2-768.png" alt="bio-milk" />
+        </picture>
+        <div class="eco-milk__desc">
+          <p class="eco-milk__text">
+            Organic milk refers to<br />
+            a number of milk products<br />
+            from livestock raised according<br />
+            to organic farming methods.
+          </p>
+
+          <button type="button" class="arrow-right__btn">
+            <svg class="eco-milk__icon">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <picture class="hero__img">
+      <source
+        srcset="./images/desktop/hero-1-1200.png 1x, ./images/desktop/hero-1-1200@2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/hero-1-768.png 1x, ./images/tablet/hero-1-768@2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/mobile/hero-1-320.png 1x, ./images/mobile/hero-1-320-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="./images/mobile/hero-1-320.png" alt="Ice cream" />
+    </picture>
+
+    <div class="hero__right-wrap">
+      <div class="hero__number-conteiner">
+        <div class="hero__right-desc">
+          <p class="hero__right-number">16</p>
+          <p class="hero__right-text">cafes</p>
+        </div>
+        <div class="hero__right-desc">
+          <p class="hero__right-number">23</p>
+          <p class="hero__right-text">food trucks</p>
+        </div>
+      </div>
+      <picture class="tasty-girl">
+        <source
+          srcset="./images/desktop/hero-3-1200.png 1x, ./images/desktop/hero-3-1200@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/tablet/hero-3-768.png 1x, ./images/tablet/hero-3-768@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img src="./images/tablet/hero-3-768.png" alt="girl eating ice cream" />
+      </picture>
+    </div>
+  </div>
+</section>
